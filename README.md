@@ -1,7 +1,3 @@
-# Tune-share
-
-----
-
 Original App Design Project - README Template
 ===
 
@@ -38,7 +34,6 @@ Tune Share is an app that allows musicians to post audio and video clips of them
 * Follow other peoples content
 * Like Content
 * Display Contnet/Stream/Feed
-* Search users
 * notification
 
 **Optional Nice-to-have Stories**
@@ -46,6 +41,7 @@ Tune Share is an app that allows musicians to post audio and video clips of them
 * Custom feeds
 * Stories
 * Login with Google
+* Search users
 
 ### 2. Screen Archetypes
 
@@ -117,14 +113,101 @@ Tune Share is an app that allows musicians to post audio and video clips of them
 ====
 
 ---------
+# Unit 9
 ---------
 
 
 ## Schema 
-[This section will be completed in Unit 9]
-### Models
-[Add table of models]
+
+### Model: Post
+| Property | Type     | Description |
+| -------- | -------- | -------- |
+| Objectid    | String     | unique id of the post   |
+| author        | Pointer to User | image author |
+| authorName    | String | author name |
+| profilePic    | File | author's profile picture |
+| image         | File     | image that user posts |
+| caption       | String   | image caption by author |
+| createdAt     | DateTime | date when post is created (default field) |
+
+### Model: Comments
+| Property      | Type     | Description |
+| ------------- | -------- | ------------|
+| userName     | String   | user unique id of comment |
+| name | String   | name of user |
+| author        | Pointer to User | comment author |
+| authorName    | String | author name |
+| profilePic    | File | author's profile picture |
+| comment       | String   | comment by the user |
+| commentedAt     | DateTime | time when comment is commented (default field) |
+
+### Model: Account
+| Property      | Type     | Description |
+| ------------- | -------- | ------------|
+| userName | String   | Unique id for the user post (default field) |
+| password | String | Password of user’s account |
+| userID  | Pointer to User | Unique id of User |
+| profileImage  | File     | User’s profile image |
+
+
+
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+- Login View Controller
+    - (Read/GET) Query logged in user object
+     ```swift
+      @IBAction func onSignin(_ sender: Any) {
+        
+        let username = usernameField.text!
+        let password = passwordField.text!
+        PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
+            if user != nil {
+                self.performSegue(withIdentifier: "LoginSegue", sender: nil)
+            }
+            else{
+                print("Error: \(error?.localizedDescription) ")
+            }
+        }
+       
+        
+        
+    }
+
+     ```
+    - (Create/POST) Create a new user
+     ```swift
+    @IBAction func onSignup(_ sender: Any) {
+        
+        var user = PFUser()
+        user.username = usernameField.text
+        user.password = passwordField.text
+        user.signUpInBackground { (sucess, error) in
+            if sucess{
+                self.performSegue(withIdentifier: "LoginSegue", sender: nil)
+        }
+            else{
+                print("Error: \(error?.localizedDescription) ")
+            }
+            
+        }
+    }
+     
+     ```
+- Homepage View Controller
+    - (Read/GET) List of posts
+    - (Create/POST) Create a new like on a post
+    - (Read/GET) List of comments
+    - (Create/POST) Create a new comment on a post
+    - (Read/GET) List of stories
+
+- Search View Controller
+    - (Read/GET) List of users
+    - (Update/PUT) Update the list of users when search
+    - (Create/POST) search for users
+- Camera View Controller
+    - No Parse interaction for this page
+- Notification View Controller
+    - (Create/POST) creates a post
+- Profile View Controller
+    - (Read/GET) User Details
+    - (Read/GET) Shows User Posts 

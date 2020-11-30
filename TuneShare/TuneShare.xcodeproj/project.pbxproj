@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		663200562574E7EA00895512 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 663200542574E7EA00895512 /* LaunchScreen.storyboard */; };
 		663200612574E7EA00895512 /* TuneShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663200602574E7EA00895512 /* TuneShareTests.swift */; };
 		6632006C2574E7EA00895512 /* TuneShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6632006B2574E7EA00895512 /* TuneShareUITests.swift */; };
+		663200A02574EA1100895512 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6632009F2574EA1100895512 /* GoogleService-Info.plist */; };
 		F268DF313F553A77F317A6FA /* Pods_TuneShare_TuneShareUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F57E5B10361FC073F48147 /* Pods_TuneShare_TuneShareUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		663200672574E7EA00895512 /* TuneShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuneShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6632006B2574E7EA00895512 /* TuneShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuneShareUITests.swift; sourceTree = "<group>"; };
 		6632006D2574E7EA00895512 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6632009F2574EA1100895512 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		669D244741F90E739E6E602F /* Pods-TuneShareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuneShareTests.debug.xcconfig"; path = "Target Support Files/Pods-TuneShareTests/Pods-TuneShareTests.debug.xcconfig"; sourceTree = "<group>"; };
 		77FA8729287B244B8B016D28 /* Pods-TuneShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuneShare.release.xcconfig"; path = "Target Support Files/Pods-TuneShare/Pods-TuneShare.release.xcconfig"; sourceTree = "<group>"; };
 		A638D6FCA3B0C08080EB2989 /* Pods-TuneShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuneShare.debug.xcconfig"; path = "Target Support Files/Pods-TuneShare/Pods-TuneShare.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		663200482574E7E600895512 /* TuneShare */ = {
 			isa = PBXGroup;
 			children = (
+				6632009F2574EA1100895512 /* GoogleService-Info.plist */,
 				663200492574E7E600895512 /* AppDelegate.swift */,
 				6632004B2574E7E600895512 /* SceneDelegate.swift */,
 				6632004D2574E7E600895512 /* ViewController.swift */,
@@ -165,7 +168,6 @@
 				669D244741F90E739E6E602F /* Pods-TuneShareTests.debug.xcconfig */,
 				C5EEFB96FF79F1AB0A0083DC /* Pods-TuneShareTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -280,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				663200562574E7EA00895512 /* LaunchScreen.storyboard in Resources */,
+				663200A02574EA1100895512 /* GoogleService-Info.plist in Resources */,
 				663200532574E7EA00895512 /* Assets.xcassets in Resources */,
 				663200512574E7E600895512 /* Main.storyboard in Resources */,
 			);

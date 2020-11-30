@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1033535319674-9ch4pmrh8dg9k7rk2ehj2jmu81mgakbj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1033535319674-9ch4pmrh8dg9k7rk2ehj2jmu81mgakbj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDgcHR77YCZ2qoV1j-Bk_f0RyHe9VwH214</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1033535319674</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>codepath.TuneShare</string>
+	<key>PROJECT_ID</key>
+	<string>tune-share-1606720639072</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tune-share-1606720639072.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1033535319674:ios:cd7206c7557c868cb395c3</string>
+	<key>DATABASE_URL</key>
+	<string>https://tune-share-1606720639072.firebaseio.com</string>
+</dict>
+</plist>

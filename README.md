@@ -194,6 +194,8 @@ Tune Share is an app that allows musicians to post audio and video clips of them
     }
      
      ```
+     <img src="http://g.recordit.co/7HovTzPq41.gif">
+     
 - Homepage View Controller
     - (Read/GET) List of posts
     - (Create/POST) Create a new like on a post

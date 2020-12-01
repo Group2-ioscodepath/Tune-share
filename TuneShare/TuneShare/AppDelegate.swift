@@ -8,6 +8,7 @@
 import GoogleSignIn
 import Firebase
 import UIKit
+import Parse
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -16,6 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let parseConfig = ParseClientConfiguration {
+                $0.applicationId = "dnqXESt6oDzkaoFvnDsI4b5GriExkawb61aywHSi" // <- UPDATE
+                $0.clientKey = "nAPn0orLp1TYVOtSicF9uZNC5vKY30wkmkHbfb9l" // <- UPDATE
+                $0.server = "https://parseapi.back4app.com"
+        }
+        Parse.initialize(with: parseConfig)
+        //
+        //
         
         FirebaseApp.configure()
         

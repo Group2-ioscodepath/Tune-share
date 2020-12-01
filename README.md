@@ -40,7 +40,8 @@ Tune Share is an app that allows musicians to post audio and video clips of them
 
 * Custom feeds
 * Stories
-* Login with Google
+* [x] Login with Google
+* Login with Twitter
 * Search users
 
 ### 2. Screen Archetypes

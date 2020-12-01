@@ -29,8 +29,8 @@ Tune Share is an app that allows musicians to post audio and video clips of them
 
 **Required Must-have Stories**
 
-* [x]Login 
-* [x]Create account
+* [x] Login 
+* [x] Create account
 * Follow other peoples content
 * Like Content
 * Display Contnet/Stream/Feed
